@@ -1,0 +1,189 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff5fa;
+    color: #444;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px 80px;
+    color: white;
+    background: linear-gradient(135deg, #ff7eb3, #8e6cff, #6cb8ff);
+    border-radius: 0 0 50% 50% / 0 0 40px 40px;
+}
+
+.foto {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    animation: melayang 3s ease-in-out infinite;
+}
+
+@keyframes melayang {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero h1 {
+    margin: 18px 0 5px;
+    font-size: 40px;
+}
+
+.sapaan {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.tombol {
+    display: inline-block;
+    background: white;
+    color: #8e6cff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: transform 0.2s;
+}
+
+.tombol:hover {
+    transform: scale(1.08);
+}
+
+main {
+    max-width: 800px;
+    margin: -30px auto 0;
+    padding: 0 20px;
+}
+
+.bagian {
+    background: white;
+    border-radius: 22px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(142, 108, 255, 0.12);
+}
+
+.bagian h2 {
+    margin-top: 0;
+    color: #8e6cff;
+}
+
+.bagian p {
+    line-height: 1.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+}
+
+.kotak {
+    background: linear-gradient(135deg, #fff0f6, #f0f0ff);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.kotak:hover {
+    transform: translateY(-6px);
+}
+
+.kotak span {
+    font-size: 28px;
+    display: block;
+}
+
+.kotak small {
+    display: block;
+    color: #999;
+    margin: 6px 0 2px;
+}
+
+.garis {
+    border-left: 4px solid #ffb6d5;
+    padding-left: 20px;
+}
+
+.langkah {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.langkah::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: #8e6cff;
+    border-radius: 50%;
+}
+
+.langkah p {
+    margin: 3px 0 0;
+}
+
+.skill p {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.bar {
+    background: #eee;
+    border-radius: 20px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: linear-gradient(90deg, #ff7eb3, #8e6cff);
+    border-radius: 20px;
+}
+
+.motto {
+    background: #f3eeff;
+    border-left: 5px solid #8e6cff;
+    border-radius: 12px;
+    padding: 18px 22px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.sosmed {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.sosmed a {
+    background: linear-gradient(135deg, #4d98fa, #8e6cff);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: transform 0.2s;
+}
+
+.sosmed a:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #999;
+}
